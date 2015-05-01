@@ -1,7 +1,7 @@
 Phantomjs 的安装与使用
 --------------------------------------------
 
-官方网站：http://phantomjs.org
+官方网站：[http://phantomjs.org](http://phantomjs.org)
 
 ## 1. ubuntu 12.04 - 64bit 上的编译安装
 
@@ -26,6 +26,20 @@ $ ./build.sh
 ```            
   
 会很慢,大概30min左右后，会在文件夹下产生一个bin文件夹，里面有个phantomjs可执行文件；
+
+* 下载二进制包【推荐】
+
+```
+https://phantomjs.googlecode.com/files/phantomjs-1.9.2-linux-x86_64.tar.bz2  
+```
+
+如果上面的被墙，就在下面的地址，选择合适的
+
+```
+https://bitbucket.org/ariya/phantomjs/downloads 
+```
+
+然后，解压，同样执行下一步。
 
 * 把phantomjs可执行文件放到系统路径下
 

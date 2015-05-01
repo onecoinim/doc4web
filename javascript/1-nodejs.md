@@ -2,62 +2,77 @@ Nodejs 的开发与设计
 -----------------------
 
     
-### 1. 源码安装nodejs
+## 1. 源码安装nodejs
  
- 下载地址：http://nodejs.org/dist/v0.12.2/node-v0.12.2.tar.gz
+下载地址：http://nodejs.org/dist/v0.12.2/node-v0.12.2.tar.gz
+
+解压并进入目录，依次执行如下命令：
+
+```
+$ ./confige
+$ make
+$ sudo make install
+```
+验证是否安装成功
  
- 解压并进入目录，依次执行如下命令：
- 
-    $ ./confige
-    $ make
-    $ sudo make install
-  
- 验证是否安装成功
- 
-    $ node -v
-    $ npm -v
+```
+$ node -v
+$ npm -v
+```
    
-### 2. 配置npm
+## 2. 配置npm
 
-  * 查看npm配置
+* 查看npm配置
+```
+$ npm config ls -l
+```
   
-    $ npm config ls -l
-  
-  * 取消 `sudo` 调用，每次输入sudo很讨厌
-  
-    $ npm config set prefix '~/.npm'
-    $ export PATH=~/.npm/bin:$PATH #Open or create a ~/.bashrc file and add this line for ubuntu
-    $ source ~/.bashrc
+* 取消 `sudo` 调用，每次输入sudo很讨厌
+```  
+$ npm config set prefix '~/.npm'
+$ export PATH=~/.npm/bin:$PATH #Open or create a ~/.bashrc file and add this line for ubuntu
+$ source ~/.bashrc
+```
 
-  或者，用户的配置文件是 `～/.npmrc`, 你也可以手动创建该文件，并添加如下代码：
-  
-    prefix = "/home/yourname/.npm"
+或者，用户的配置文件是 `～/.npmrc`, 你也可以手动创建该文件，并添加如下代码：
 
-  当然，要记得添加 `export PATH=~/.npm/bin:$PATH` 到 `~/.bashrc`
+```
+prefix = "/home/yourname/.npm"
+```
+
+当然，要记得添加 `export PATH=~/.npm/bin:$PATH` 到 `~/.bashrc`
  
-  * 添加代理
-  很多时候，公司有代理，可以使用上述2种方法的任何一种去添加。总之就是在 `～/.npmrc` 中加入：
+* 添加代理
+
+很多时候，公司有代理，可以使用上述2种方法的任何一种去添加。总之就是在 `～/.npmrc` 中加入：
                  
-    proxy=http://proxy.domain:port/       #Ex: proxy=http://proxy.onecoin.im:8080/
-    https_proxy=http://proxy.domain:port/ #Ex: https_proxy=http://proxy.onecoin.im:1080/
+```
+proxy=http://proxy.domain:port/       #Ex: proxy=http://proxy.onecoin.im:8080/
+https_proxy=http://proxy.domain:port/ #Ex: https_proxy=http://proxy.onecoin.im:1080/
+```
 
-### 3. 安装其他组件
+## 3. 安装其他组件
 
-  依次安装
+依次安装
   
-      $ npm install -g bower
-      $ npm install -g watchman
-      $ npm install -g phantomjs  #这样安装可能会失败，请从源码安装 查看：2-phantomjs.md
-  
+```
+$ npm install -g bower
+$ npm install -g watchman
+$ npm install -g phantomjs  #这里安装的是node支持模块，要先安装phantomjs才可以，查看：2-phantomjs.md
+```  
 
-### 4. 使用ember-cli-i18n
+## 4. 使用ember-cli-i18n
 
-  参考：https://github.com/dockyard/ember-cli-i18n
+参考：https://github.com/dockyard/ember-cli-i18n
   
-  1> 安装
+1> 安装
+ 
+```
+npm install ember-cli-i18n --save-dev
+```
   
-    npm install ember-cli-i18n --save-dev
-  
-  2> 使用
-  
-    不能使用保留字，比如：helper,help等作为键名，否则会出错
+2> 使用
+
+```  
+不能使用保留字，比如：helper,help等作为键名，否则会出错
+```
