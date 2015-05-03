@@ -16,3 +16,9 @@
 * Binuxの杂货铺
 说明：关于使用PhantomJS写网络爬虫的例子非常不错
 链接：[http://blog.binux.me/](http://blog.binux.me/)
+
+# ruby
+
+* Rei个人博客
+说明：一个有思想的开发者
+链接：http://chloerei.com/
