@@ -3,6 +3,11 @@ Ember.js的安装与使用
 
 使用ember-cli作为开发命令行工具，让ember.js具备rails似的强大工具
 
+## 4. router.js需要注意的小细节
+
+*  `this.resource('tools');` 与 `this.resource('tools', function() {});` 的区别
+
+
 
 ## 3. link-to的2个必须注意的小细节
 
