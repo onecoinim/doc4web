@@ -21,6 +21,13 @@
 
 其他：[Ubuntu下非常给力的下载工具--uget+aria2](http://burner1024.blog.163.com/blog/static/17447800420126191858424/) 
 
+### Nginx服务器
+
+* Nginx图书馆
+
+说明：一个专注于撰写Nginx相关文章的个人网站
+
+链接：http://nginxlibrary.com/
 
 ### javascript相关
 
