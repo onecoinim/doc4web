@@ -45,8 +45,34 @@
 
 ### ruby
 
+* Yu-Cheng Chuang的博客（台湾？）
+
+说明：OAuth 2.0 筆記, 对rack-oauth2进行了深入解读，对于开发Api认证很有帮助
+
+链接：http://blog.yorkxin.org/posts/2013/09/30/oauth2-1-introduction/
+
+另附：Ruby / Rails 的 OAuth 2 整合方案簡單評比
+
+链接：http://blog.yorkxin.org/posts/2013/10/08/oauth2-ruby-and-rails-integration-review/
+
 * Rei个人博客
 
 说明：一个有思想的开发者
 
 链接：http://chloerei.com/
+
+### 其他工具集
+
+没想到，已经有人像俺这么收集整理信息了，收录下下
+
+* 收集&推荐优秀的 Apps/硬件/技巧/周边等
+
+链接：https://github.com/hzlzh/Best-App
+
+* 一位Mac大侠
+
+链接： http://blog.eddie.com.tw/2012/01/04/my-toolbox/
+
+* 另一位Mac大侠
+
+链接：http://blog.yorkxin.org/toolbox.html

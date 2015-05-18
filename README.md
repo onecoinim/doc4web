@@ -11,3 +11,7 @@
 
 ## 5、常用资源
 
+
+## License
+
+[The MIT License (MIT)](https://github.com/onecoinim/faq4web/blob/master/LICENSE)
