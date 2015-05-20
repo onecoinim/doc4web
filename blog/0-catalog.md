@@ -31,6 +31,12 @@
 
 ### javascript相关
 
+* emberjs 资源汇总站
+
+说明：有人专门收集，方便多了
+
+链接：http://emberwatch.com/
+
 * Binuxの杂货铺
 
 说明：关于使用PhantomJS写网络爬虫的例子非常不错
