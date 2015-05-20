@@ -1,7 +1,19 @@
 Padrino 开发框架使用
 
 
-#### 1. rake ar:create失败，似乎没有任何作用？
+### 2.详解Rack::Cookie
+
+问题：
+
+https://github.com/padrino/padrino-framework/issues/1801
+
+参考：
+
+http://cookiebody.github.io/2014/10/24/cookie-and-session-in-rack.html
+http://cookiebody.github.io/2014/04/20/padrino-csrf-protection.html
+
+
+### 1. rake ar:create失败，似乎没有任何作用？
 
 问题：https://github.com/padrino/padrino-framework/issues/1856
 
