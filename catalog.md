@@ -31,6 +31,12 @@
 
 ### javascript相关
 
+* abuiles的个人网站
+
+说明：ember 研究比较深入，还写过一本关于ember-cli的电子书
+
+链接：http://blog.abuiles.com/
+
 * emberjs 资源汇总站
 
 说明：有人专门收集，方便多了

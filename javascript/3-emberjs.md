@@ -3,11 +3,44 @@ Ember.js的安装与使用
 
 使用ember-cli作为开发命令行工具，让ember.js具备rails似的强大工具
 
+## 8. 格式化数据
+
+从客户端请求或提交的数据，有时候需要格式化，具体由RESTSerializer负责
+
+参考：
+
+* 官方文档
+* http://stackoverflow.com/questions/21634433/formatting-json-using-the-restserializer-in-the-latest-ember-data-version
+* http://stackoverflow.com/questions/20410016/transform-json-to-an-appropriate-format-for-restadapter-emberjs
+
+## 7. 设置一个全局变量，比如currentUser
+
+* 不建议这么做。
+
+参考：http://stackoverflow.com/questions/16878473/access-a-global-variable-from-any-app-controller
+
+* 简单的做法，要用initializer，很多插件就是这么做的，特别是ember-simple-auth
+
+参考：http://stackoverflow.com/questions/23718384/where-do-you-place-a-simple-variable-in-the-ember-app-kit-file-structure-so-it-c
+     
+http://www.samselikoff.com/blog/injecting-a-global-variable-into-your-ember-classes/
+     
+## 6. ember-data 
+
+参考：https://github.com/emberjs/data/blob/master/TRANSITION.md
+
+http://www.toptal.com/emberjs/a-thorough-guide-to-ember-data
+
+
+## 5. nest 嵌套资源等
+
+参考：http://stackoverflow.com/questions/24097522/nested-resources-in-ember-js-adding-comments-to-a-post-with-fixture-data
+
 ## 4. router.js需要注意的小细节
 
-*  `this.resource('tools');` 与 `this.resource('tools', function() {});` 的区别
+*  `this.resource('tools');` 与 `this.resource('tools', function() {});` 的区别，下面的文章印证了这个区别
 
-
+链接：http://ugisozols.com/blog/2013/11/05/understanding-nesting-in-emberjs/
 
 ## 3. link-to的2个必须注意的小细节
 
