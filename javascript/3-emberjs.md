@@ -9,7 +9,7 @@ Ember.js的安装与使用
 
 参考：
 
-* 官方文档
+* 官方文档，非常详细了 http://emberjs.com/api/data/classes/DS.ActiveModelSerializer.html#method_serializeBelongsTo
 * http://stackoverflow.com/questions/21634433/formatting-json-using-the-restserializer-in-the-latest-ember-data-version
 * http://stackoverflow.com/questions/20410016/transform-json-to-an-appropriate-format-for-restadapter-emberjs
 
