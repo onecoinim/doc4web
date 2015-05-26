@@ -3,6 +3,20 @@ Phantomjs 的安装与使用
 
 官方网站：[http://phantomjs.org](http://phantomjs.org)
 
+## 2. 抓取网页
+
+* 抓取
+
+http://javascript.ruanyifeng.com/tool/phantomjs.html#toc15
+
+http://blog.csdn.net/starean/article/details/9467697
+
+* 吐槽
+
+http://segmentfault.com/q/1010000000149454
+
+http://blog.cooer.net/2014/%E8%AE%A9%E4%BA%BA%E6%AC%A2%E5%96%9C%E8%AE%A9%E6%88%91%E5%BF%A7%E7%9A%84phantomjs/
+
 ## 1. ubuntu 12.04 - 64bit 上的编译安装
 
 * 安装依赖包
