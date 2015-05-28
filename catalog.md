@@ -3,6 +3,17 @@
 
 如果您也是技术博客写手，欢迎添加或分享
 
+### 综合性资源【就像字典一样随时使用】
+
+* 各类文档很全，更新也很及时，开发必备
+
+链接：http://devdocs.io/
+
+* Ember官方文档
+
+链接：http://emberjs.com
+
+
 ### github.com资源
 
 * DockYard公司
@@ -11,7 +22,7 @@
 
 链接：https://github.com/dockyard
 
-### linux系统相关
+### linux系统
 
 * 薄荷开源网
 
@@ -29,7 +40,7 @@
 
 链接：http://nginxlibrary.com/
 
-### javascript相关
+### javascript
 
 * abuiles的个人网站
 
@@ -72,6 +83,12 @@
 说明：一个有思想的开发者
 
 链接：http://chloerei.com/
+
+### 云服务器
+
+* AWS 亚马逊云服务器
+
+链接：http://www.aws-faq.com/
 
 ### 其他工具集
 

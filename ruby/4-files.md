@@ -1,6 +1,14 @@
 各类文件操作
 -----------------
 
+### ruby文件操作
+
+* 比较好的中文文档
+
+链接：http://www.bkjia.com/ruby/998607.html
+
+链接：http://notreally.iteye.com/blog/155071
+
 ### Json文件操作
 
 * 文档
