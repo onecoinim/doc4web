@@ -3,6 +3,7 @@ Phantomjs 的安装与使用
 
 官方网站：[http://phantomjs.org](http://phantomjs.org)
 
+
 ## 2. 抓取网页
 
 * 抓取
@@ -10,6 +11,8 @@ Phantomjs 的安装与使用
 http://javascript.ruanyifeng.com/tool/phantomjs.html#toc15
 
 http://blog.csdn.net/starean/article/details/9467697
+
+http://www.ibm.com/developerworks/cn/opensource/os-extractruby/ 
 
 * 吐槽
 
