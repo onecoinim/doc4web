@@ -31,6 +31,7 @@ http://www.samselikoff.com/blog/injecting-a-global-variable-into-your-ember-clas
 
 http://www.toptal.com/emberjs/a-thorough-guide-to-ember-data
 
+http://www.57kan.com/show/index/id/36812 分析很深入
 
 ## 5. nest 嵌套资源等
 
