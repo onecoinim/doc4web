@@ -1,7 +1,65 @@
-各类文件操作
------------------
+ruby 语言及其框架 目录
+----------------
 
-### ruby文件操作
+## 1. rails
+
+## 2. padrino
+
+### (2)详解Rack::Cookie
+
+问题：
+
+https://github.com/padrino/padrino-framework/issues/1801
+
+参考：
+
+http://cookiebody.github.io/2014/10/24/cookie-and-session-in-rack.html
+http://cookiebody.github.io/2014/04/20/padrino-csrf-protection.html
+
+
+### (1) rake ar:create失败，似乎没有任何作用？
+
+问题：https://github.com/padrino/padrino-framework/issues/1856
+
+解决：
+
+* 上面的链接给了一种解决办法，就是注释掉attr_protected的使用；
+    
+* 为了省事，直接使用SQL语句： 
+   
+    Mysql创建数据库sql语句
+    CREATE DATABASE IF NOT EXISTS onecoinim_db_product DEFAULT CHARSET utf8 COLLATE utf8_general_ci;
+    
+## 3. gems
+
+### (1) gem install xxx 的时候遇到错误信息包含：“Error fetching data: Errno::ETIMEDOUT: Operation timed out - connect(2)”
+
+解决：网络问题导致请求服务器连接被重置了。你可以尝试换一台机器或网络尝试安装，检测是否是服务器的问题。如果是，请更新源：
+
+    $ gem sources --remove https://rubygems.org/
+    $ gem sources -a https://ruby.taobao.org/
+    $ gem sources -l
+    *** CURRENT SOURCES ***
+    
+    https://ruby.taobao.org        
+    
+## 4. ruby
+
+### (5) 网站内容抓取
+
+https://ruby-china.org/topics/21157
+
+http://docs.seattlerb.org/mechanize/EXAMPLES_rdoc.html#label-Google
+
+http://casperjs.org/
+
+http://my.oschina.net/xsinger/blog/14206
+
+### (4) ruby执行周期性任务
+
+http://www.cnblogs.com/wangyuyu/p/3818826.html
+
+### (3) ruby文件操作
 
 * 比较好的中文文档
 
@@ -9,7 +67,7 @@
 
 链接：http://notreally.iteye.com/blog/155071
 
-### Json文件操作
+### (2) Json文件操作
 
 * 文档
 
@@ -49,7 +107,7 @@ Alternatively:
 
 Note: I have used a "snake_case" name for the method corresponding to your "camelCase" saveUserLib as this is the Ruby convention.
 
-### Erb文件操作
+### (1) Erb文件操作
 
 * 文档
 
