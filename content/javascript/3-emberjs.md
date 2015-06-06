@@ -3,6 +3,18 @@ Ember.js的安装与使用
 
 使用ember-cli作为开发命令行工具，让ember.js具备rails似的强大工具
 
+## 9. 在调用视图中的actions，以及在视图中通过代码触发action
+
+调用视图：
+
+http://guides.emberjs.com/v1.10.0/templates/actions/
+http://stackoverflow.com/questions/11887836/handling-action-in-view-not-router
+
+代码触发：
+
+http://stackoverflow.com/questions/18850340/ember-js-trigger-an-action-programmatically
+http://emberjs.com/api/classes/Ember.ViewTargetActionSupport.html
+
 ## 8. 格式化数据
 
 从客户端请求或提交的数据，有时候需要格式化，具体由RESTSerializer负责
