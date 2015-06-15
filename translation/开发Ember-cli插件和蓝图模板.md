@@ -1,4 +1,4 @@
-## 开发插件和生成模板
+## 开发Ember-cli插件和蓝图模板
 插件（addon）可以让代码在应用间轻松共享
 
 本向导将通过一个虚构的`ember-cli-xbutton`插件的开发过程来展开。
@@ -317,17 +317,11 @@ test('is a button tag', function() {
 `ember addon xbutton --blueprint`
 
 这将为插件产生一个文件夹 `blueprints/xbutton`，在这里你可以定义蓝图模板的逻辑和模板文件。您可以为一个插件定义多个蓝图模板。
-最后加载蓝图赢得对覆盖现有(同名)蓝图的灰烬或其他插件(根据包装加载顺序。)
-The last loaded blueprint wins with respect to overriding existing (same name) blueprints that come with Ember or other addons (according to package load order.)
+最后加载的蓝图模板会覆盖现有(同名)蓝图的模板，该模板可以是来自Ember或其他插件(根据包加载顺序)
 
 ### 蓝图模板约定
-Blueprints are expected to be located under the `blueprints` folder in the addon root, just like blueprints overrides in your project root.
-
-If you have your blueprints in another folder in your addon, you need to tell ember-cli where to find them by specifying a `blueprintsPath` property for the addon (see *advanced customization* section below).
-
-If you are familiar with *Yeoman* (or Rails) generators, blueprints follow very similar conventions and structure.
-
-To dive deeper into blueprints design, please see the [Ember CLI blueprints](https://github.com/stefanpenner/ember-cli/tree/master/blueprints) where you get a feeling for the blueprints API. 
+蓝图模板应该放在在插件根目录的`blueprints`文件夹下， 就像覆盖工程根目录的蓝图模板一样。如果把它们放在插件的其他目录下，需要通过设置插件的`blueprintsPath`属性告诉ember-cli去哪找到它
+(请看下面的 *高级定制* 部分)，如果你熟悉 *Yeoman* (或Rails)的产生器，蓝图模板遵从类似的约定和结构。要想更深入的了解蓝图模板设计，请看 [Ember CLI blueprints](https://github.com/stefanpenner/ember-cli/tree/master/blueprints)。 
 
 ### 模板文件结构
 
@@ -346,19 +340,20 @@ blueprints/
         __name__.js
 ```
 
-Note that the special file or folder called `__name__` will create a file/folder at that location in your app with the `__name__` replaced by the first argument (name) you pass to the blueprint being generated.
+注：这里被命名为`__name__` 的特殊文件或文件夹，将（在运行命令时）在你的应用程序中产生一个文件/文件夹，第一个命令行参数(name)代替`__name__`。
 
 `ember g xbutton my-button``
 
-Will thus generate a folder `app/components/my-button` in the application where the blueprint generator is run.
+由此在你的应用程序中产生一个文件夹`app/components/my-button`。
 
 ### 开发时链接到插件
-While you are developing and testing, you can run `npm link` from the root of your addon project. This will make your addon locally available by name.
+当你开发和测试的时候，你可以在你的插件工程的根目录运行`npm link`，这样你就可以通过插件名称在本地使用该插件了。
 
-Then run `npm link <addon-name>` in any hosting application project root to make a link to your addon in your `node_modules` folder. Any change in your addon will now directly take effect in any project that links to it this way (see [npm-tricks](http://www.devthought.com/2012/02/17/npm-tricks) for more details.
+然后，在您计划使用的应用程序工程根目录，运行`npm link <addon-name>`，就会将插件链接到应用程序的`node_modules`文件夹下，这样，插件中的任何改变都会在链接该插件的任何工程中直接发生作用。
+请看 [npm-tricks](http://www.devthought.com/2012/02/17/npm-tricks)
 
 ### 发布插件
-Use *npm* and *git* to publish the addon like a normal npm package.
+使用 *npm* 和 *git* 来发布插件，就像一个标准的npm包。
 
 ```bash
 npm version 0.0.1
@@ -367,9 +362,9 @@ git push origin --tags
 npm publish
 ```
 
-See [npm-version](https://www.npmjs.org/doc/cli/npm-version.html) for details. 
+更多细节，请看 [npm-version](https://www.npmjs.org/doc/cli/npm-version.html)。 
 
-These commands will:
+这些命令将被执行：
 
 - tag with the version number
 - push the committed addon code to your git repo (origin branch)
@@ -377,27 +372,26 @@ These commands will:
 - publish addon to the global npm repository.
 
 ### 安装和使用插件
-In order to use the addon from you hosting application:
-
-To install your addon from the [npm.org](https://www.npmjs.org/) repository:
+为了从您托管的应用中使用插件，从 [npm.org](https://www.npmjs.org/) 安装该插件：
 
 `npm install ember-cli-<your-addon-name-here> --save-dev`.
 
-For our *xbutton* sample addon:
+对于我们的 *xbutton* 插件：
 
 `npm install ember-cli-xbutton --save-dev`.
 
-Run the *xbutton* blueprint generator via:
+运行 *xbutton* 蓝图模板：
 
 `ember generate xbutton`
 
 ### 更新插件
-You can update an addon the same way you update an Ember app by running `ember init` in your project root.
+可以像更新Ember应用一样，通过在工程根目录运行`ember init`命令，更新一个插件。
 
 ### 完整例子
-For a good walkthrough of the (recent) development of a real world addon, take a look at: 
-[Creating a DatePicker Ember CLI addon](http://edgycircle.com/blog/2014-creating-a-datepicker-ember-addon)
+作为一个真实的插件应用实例，请看 [创建一个DatePicker Ember-CLI插件](http://edgycircle.com/blog/2014-creating-a-datepicker-ember-addon)
 
 ### 译注
 
-1. the consuming application：是基于ember-cli等核心API开发的应用，英文通常就是这么称呼，也就是我们口头所说的应用程序，而非插件应用
+1. the consuming application：是基于ember-cli等核心API开发的应用，英文通常就是这么称呼，也就是我们口头所说的应用程序，而非插件应用;
+2. the hosting application: 托管中的应用，应该是另一种称谓而已，这里应该没有太大区别;
+3. blueprint: 这里翻译成 `蓝图模板`，区别于它之下的具体的模板文件，这在rails中，其实就是一个generator
