@@ -25,14 +25,14 @@ Ember CLI将检查一个插件的存在，通过检测每个应用依赖，搜�
 ### 场景
 Ember CLI插件API，当前支持下面的场景:
 
-* 对在应用程序【译注1】的`Brocfile.js`文件中创建的`EmberApp`进行操作
+* 操作主程序的`Brocfile.js`文件中的`EmberApp`
 * 添加预处理器到默认的注册表
 * 提供一个自定义应用程序树与应用程序合并
 * 提供定制的专用(服务器)中间件
 * 添加自定义/额外的蓝图模板,通常为脚本生成应用程序/工程文件
 
 ### 插件命令行选项
-Ember CLI有一个*addon*命令，带有下面的选项:
+Ember CLI有一个 *addon* 命令，带有下面的选项:
 
 ```bash
 ember addon <addon-name> <options...>
@@ -83,22 +83,22 @@ Installed browser packages via Bower.
 ```
 
 ### 插件约定
-插件基础是基于“约定优于配置”的，与*Ember*哲学一致。建议您遵循这些约定,让自己更容易，让别人更好的理解你的代码。同样适用于插件的蓝图模板。
+插件基于“约定优于配置”，与 *Ember* 哲学一致。建议你遵循这些约定，让自己更容易、让别人更好地理解你的代码。这同样适用于插件的蓝图模板。
 
 ### 插件工程结构
-创建插件项目遵循这些结构约定:
+插件工程遵循这些结构约定:
 
 * `app/` - 合并到应用程序的命名空间。
 * `addon/` - 插件的命名空间部分。
-* `blueprints/` - 包含插件所有蓝图模板,每一个存放在一个独立的文件夹。
+* `blueprints/` - 包含插件所有蓝图模板，每一个存放在一个独立的文件夹里。
 * `tests/` - 测试文件夹，包括一个"dummy"测试应用和验收测试助手。
-* `vendor/` -第三方特定文件，比如stylesheets, fonts, 外部包等等。 
+* `vendor/` - 第三方专有文件，比如stylesheets, fonts, 外部包等等。 
 * `Brocfile.js` - 编译配置。
 * `package.json` - Node元数据，依赖库等。
 * `index.js` - 主要Node入口点(遵从npm约定)。
 
 ### Package.json
-产生的插件的`package.json`文件，像这样:
+插件的`package.json`文件，像这样:
 
 ```javascript
 {
@@ -213,9 +213,9 @@ export default Ember.Component.extend({
 ```
 
 ### 蓝图模板
-为创建蓝图模板, 添加一个文件 `blueprints/xbutton/index.js`. 这遵循的是通常的Ember蓝图模板的命名约定。
+为创建蓝图模板, 添加一个文件 `blueprints/xbutton/index.js`. 这遵循的是标准的Ember蓝图模板的命名约定。
 
-确保依赖文件导入到应用程序。使用`included`钩子以正确的顺序导入文件。
+确保依赖文件导入到应用程序，使用`included`钩子以正确的顺序导入这些文件。
 
 ```javascript
 module.exports = {
@@ -231,11 +231,11 @@ module.exports = {
 };
 ```
 
-在这个例子文件里, `included` 钩子被使用。 这个钩子被`EmberApp` 构造函数调用，并且让该应用把它作为`app`调用，
-当应用的`Brocfile.js` 被Ember CLI调用去build/serve的时候。插件的`included`函数被调用传递`EmberApp`实例.
+在这个例子文件里, 使用了`included` 钩子。这个钩子被`EmberApp`构造函数调用，并且让该应用把它作为`app`（与`app`文件夹下的文件一样）调用。
+当主应用的`Brocfile.js`被Ember CLI调用去build/serve的时候，插件的`included`函数被调用，通过该应用的`EmberApp`实例（将插件的依赖文件添加到主程序）。
 
 ### 高级定制
-一般来说,如果你想超越定制或想要/需要更高级的控制，以下是`index.js`里一些插件对象的可用钩子(键)。所有的钩子期望函数的值。所有的钩子都希望把一个函数作为值。
+一般来说，如果你想超越内置或想要/需要更高级的控制，以下是`index.js`里一些插件对象的可用钩子(键)。所有的钩子都希望把一个函数作为它的值（钩子都应该是函数）。
 
 ```javascript
 includedCommands: function() {}
