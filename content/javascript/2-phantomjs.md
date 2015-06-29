@@ -1,12 +1,19 @@
 Phantomjs 的安装与使用
 --------------------------------------------
 
-官方网站：[http://phantomjs.org](http://phantomjs.org)
+官方网站：
 
+[http://phantomjs.org](http://phantomjs.org)
+
+http://casperjs.org/
 
 ## 2. 抓取网页
 
 * 抓取
+
+http://sudodev.cn/tag/casperjs-phantomjs
+
+http://www.oschina.net/code/snippet_84535_16533
 
 http://javascript.ruanyifeng.com/tool/phantomjs.html#toc15
 
