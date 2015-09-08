@@ -3,6 +3,9 @@ Ember.js的安装与使用
 
 使用ember-cli作为开发命令行工具，让ember.js具备rails似的强大工具
 
+## 10. 点击link-to链接和F5刷新页面有什么区别？mvc各自的hook方法是什么，为什么？
+
+
 ## 9. 在调用视图中的actions，以及在视图中通过代码触发action
 
 调用视图：
